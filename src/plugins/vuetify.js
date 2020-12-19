@@ -5,14 +5,15 @@ import es from "vuetify/es5/locale/es";
 Vue.use(Vuetify);
 
 export default new Vuetify({
-    theme: {
+    theme: { 
+        dark: true,
         options: {
             customProperties: true
         },
         themes: {
             light: {
-                primary: "#C0C0C0",
-                secondary: "#424242",
+                primary: "#7133FF",
+                secondary: "#FF33D1",
                 accent: "#82B1FF",
                 error: "#FF5252",
                 info: "#2196F3",
