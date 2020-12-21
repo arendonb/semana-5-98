@@ -159,7 +159,7 @@
             <v-list-item slot="activator">
               <v-list-item-content>
                 <v-list-item-title>
-                  Almacén
+                  Servicios
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
