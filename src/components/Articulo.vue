@@ -294,7 +294,7 @@
             },
             editItem (item) {
                  this.id=item.id;
-                this.categoria=item.categoria.id;
+                //this.categoria=item.categoria.id;
                 this.codigo=item.codigo;
                 this.nombre=item.nombre;
                 this.stock=item.stock;
