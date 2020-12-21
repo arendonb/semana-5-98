@@ -4,6 +4,7 @@
         <div class="row mt-md-5 mt-sm-5 mt-xs-5">
             <div v-for="(art,indice) of datos" :key="art.id" class="col-lg-6 col-xs-12 border">
                 <div v-if="indice<=3">
+                <!-- <div v-if="estado===1"> -->
                 <div  class="d-flex justify-content-center align-items-center">
 
                     <div class="p-3">
