@@ -84,7 +84,7 @@
             <div class="row">
 
                 <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
+                <div class="col-md-5 mt-md-0 mt-3">
 
                     <!-- Content -->
                     <h5 class="text-uppercase font-weight-bold">Motivación</h5>
@@ -116,7 +116,7 @@
                 <hr class="clearfix w-100 d-md-none pb-3">
 
                 <!-- Grid column -->
-                <div class="col-md-6 mb-md-0 mb-3">
+                <div class="col-md-7 mb-md-0 mb-3">
 
                     <!-- Content -->
                     <h5 class="text-uppercase font-weight-bold">Integrantes</h5>
