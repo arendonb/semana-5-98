@@ -14,7 +14,7 @@
             </ul>
         </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<!--     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
@@ -57,8 +57,22 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
     <div>
+      <v-carousel :show-arrows="false"
+    cycle
+    height="400"
+    
+   >
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+    ></v-carousel-item>
+  </v-carousel>
+
+<h2 class="text-center mt-5"> Servicios </h2>
+
       <home/>
     </div>
     <footer class="page-footer bg-secondary text-white pt-4">
@@ -263,7 +277,21 @@ export default {
     data () {
       return {
       drawer: false,
-      estado:1
+      estado:1,
+      items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          },
+        ]
       }
     },
 
