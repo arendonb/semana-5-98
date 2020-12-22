@@ -70,6 +70,9 @@
       :src="item.src"
     ></v-carousel-item>
   </v-carousel>
+
+<h2 class="text-center mt-5"> Servicios </h2>
+
       <home/>
     </div>
     <footer class="page-footer bg-secondary text-white pt-4">

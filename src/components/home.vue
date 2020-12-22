@@ -31,6 +31,10 @@
             </div>
         </div>
     </div>
+   
+   <h2 class="text-center mt-5"> Equipo </h2>
+
+
     <div class="container-fluid">
         <div class="row justify-content-center mb-5">
             <div v-for="miembro in team" :key="miembro.codigo" class="col mt-5">
