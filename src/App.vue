@@ -3,8 +3,8 @@
   <div v-if="estado">
      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
         <a class="navbar-brand " href="# ">
-            <img src="https://www.flaticon.com/svg/static/icons/svg/1934/1934014.svg" width="30 " height="30
-    " class="d-inline-block align-top " alt=" " loading="lazy "> SPRINT 5
+            <img src="https://www.flaticon.es/svg/static/icons/svg/3898/3898348.svg" width="30 " height="30
+    " class="d-inline-block align-top " alt=" " loading="lazy "> Grupo 98
         </a>
         <div class="collapse navbar-collapse justify-content-end " id="navbarNav ">
             <ul class="navbar-nav ">
@@ -14,7 +14,7 @@
             </ul>
         </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<!--     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1" class=""></li>
@@ -57,8 +57,22 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
+    </div> -->
     <div>
+      <v-carousel :show-arrows="false"
+    cycle
+    height="400"
+    
+   >
+    <v-carousel-item
+      v-for="(item,i) in items"
+      :key="i"
+      :src="item.src"
+    ></v-carousel-item>
+  </v-carousel>
+
+<h2 class="text-center mt-5"> Servicios </h2>
+
       <home/>
     </div>
     <footer class="page-footer bg-secondary text-white pt-4">
@@ -73,9 +87,29 @@
                 <div class="col-md-6 mt-md-0 mt-3">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla, nihil repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam recusandae harum esse fugiat. Itaque, culpa?</p>
+                    <h5 class="text-uppercase font-weight-bold">Motivación</h5>
+                     <br />
+          <p>
+            Esta página fue creada con la motivación de aprender a trabajar con
+            FrontEnd y BackEnd en un mismo proyecto.<br />
+            <br />
 
+            <a
+              class="navbar-brand"
+              href="https://github.com/arendonb/semana-5-98"
+              target="_blank"
+            >
+              <img
+                src="https://www.flaticon.es/svg/static/icons/svg/270/270798.svg"
+                width="40"
+                height="40"
+                alt=" "
+                loading="lazy "
+              />
+              GitHub</a
+            >
+            <br />
+          </p>
                 </div>
                 <!-- Grid column -->
 
@@ -85,9 +119,20 @@
                 <div class="col-md-6 mb-md-0 mb-3">
 
                     <!-- Content -->
-                    <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis modi earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos ipsam, aspernatur id excepturi hic.
-                    </p>
+                    <h5 class="text-uppercase font-weight-bold">Integrantes</h5>
+                    <p>Santiago Andres Millan Pardo - Bogotá - santiagomillanpardo@gmail.com - BackEnd<br>
+                    <br>
+                    Cristhian Daniel Díaz Salazar - Pereira - crdadiaz@utp.edu.co - Scrum Master<br>
+                    <br>
+
+                    Miguel Enrique Marquez Aldana - Bogotá - miguelmarquez.99@gmail.com - Tester<br>
+                    <br>
+
+                    Diego Luis Soto Mendoza - Villavicencio - diegoluissotomendoza@gmail.com - FrontEnd<br>
+                    <br>
+                    
+                    Alejandro Rendón Blandon - Medellín - arendonb@gmail.com - Product Owner<br>
+                    <br></p>
 
                 </div>
                 <!-- Grid column -->
@@ -128,7 +173,7 @@
             <v-list-item slot="activator">
               <v-list-item-content>
                 <v-list-item-title>
-                  Almacén
+                  Servicios
                 </v-list-item-title>
               </v-list-item-content>
             </v-list-item>
@@ -232,7 +277,21 @@ export default {
     data () {
       return {
       drawer: false,
-      estado:1
+      estado:1,
+      items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          },
+        ]
       }
     },
 
